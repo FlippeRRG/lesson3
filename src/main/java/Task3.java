@@ -15,6 +15,7 @@ public class Task3 {
         System.out.println( "Введите номер страницы для печати!" );
         int pageNumber = scan.nextInt();
         printPage( pageNumber );
+
     }
 
     public void readDocument(String way) {
