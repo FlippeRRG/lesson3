@@ -14,6 +14,8 @@ public class Main {
         Task3 test = new Task3("1/task3");
 
 
+
+
         try (FileInputStream in = new FileInputStream("1/text.txt")) {
             byte[] arr = new byte[512];
             int x;
