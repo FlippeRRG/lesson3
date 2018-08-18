@@ -1,8 +1,5 @@
 import java.io.*;
 import java.io.IOException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -12,7 +9,6 @@ public class Main {
         File file = new File( "1" );
         File file2 = new File( "C:/Users/roma/Desktop/Java/lesson3/1", "text.txt" );
         Task3 test = new Task3("1/task3");
-
 
         try (FileInputStream in = new FileInputStream("1/text.txt")) {
             byte[] arr = new byte[512];
@@ -30,12 +26,10 @@ public class Main {
         ali.add(new FileInputStream("1/4"));
         ali.add(new FileInputStream("1/5"));
         ali.add(new FileInputStream("1/text.txt"));
-
         SequenceInputStream in = new SequenceInputStream( Collections.enumeration(ali));
         int x;
         while ((x = in.read()) != - 1) {
-            System.out.print((char)x);
-        }
+            System.out.print((char)x);        }
         in.close();
 
     }
